@@ -1,65 +1,112 @@
 <!--Main Navigation-->
 <header class="intro-header">
   <!--Navbar-->
-  <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+  <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" *ngIf="!classBackground">
     <mdb-navbar-brand>
-      <a class="logo navbar-brand waves-light" mdbWavesEffect href="#"> <img width="250px" src="../assets/images/black-logo-trans.png" alt="logo" class="logo logo-image"></a>
+      <a class="logo navbar-brand waves-light" mdbWavesEffect href="#"> <img width="250px"
+                                                                             src="../assets/images/black-logo-trans.png"
+                                                                             alt="logo" class="logo logo-image"></a>
     </mdb-navbar-brand>
     <links>
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active waves-light" mdbWavesEffect>
-          <a class="nav-link" href="#">Accueil<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="">Accueil<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item waves-light" mdbWavesEffect>
-          <a class="nav-link" href="#">Le cabinet</a>
+          <a class="nav-link" href="le-cabinet">Le cabinet</a>
         </li>
-        <li class="nav-item waves-light" mdbWavesEffect>
-          <a class="nav-link" href="#">Préstations</a>
+
+        <li class="nav-item waves-light dropdown" mdbWavesEffect>
+          <a
+            class="nav-link dropdown-toggle"
+            id="navbarDropdownMenuLink1"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Préstations
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+            <li>
+              <a class="dropdown-item" href="#">Action</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Another action</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
         </li>
         <li class="nav-item waves-light" mdbWavesEffect>
           <a class="nav-link" href="#">Prix</a>
         </li>
         <li class="nav-item waves-light" mdbWavesEffect>
-          <a class="nav-link" href="#">Contacts</a>
+          <a class="nav-link" href="/contact">Contacts</a>
         </li>
       </ul>
       <form class="form-inline waves-light" mdbWavesEffect>
         <div class="md-form mt-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Rechercher">
+          <input class="form-control mr-sm-2" type="text" placeholder="Recherche" aria-label="Rechercher">
+        </div>
+      </form>
+    </links>
+  </mdb-navbar>
+  <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark fixed-top top-nav-collapse" *ngIf="classBackground">
+    <mdb-navbar-brand>
+      <a class="logo navbar-brand waves-light" mdbWavesEffect href="#"> <img width="250px"
+                                                                             src="../assets/images/black-logo-trans.png"
+                                                                             alt="logo" class="logo logo-image"></a>
+    </mdb-navbar-brand>
+    <links>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active waves-light" mdbWavesEffect>
+          <a class="nav-link" href="">Accueil<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <a class="nav-link" href="presentation">Le cabinet</a>
+        </li>
+        <li class="nav-item waves-light dropdown" mdbWavesEffect>
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Préstations
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li>
+              <a class="dropdown-item" href="#">Action</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Another action</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <a class="nav-link" href="#">Prix</a>
+        </li>
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <a class="nav-link" href="/contact">Contacts</a>
+        </li>
+      </ul>
+      <form class="form-inline waves-light" mdbWavesEffect>
+        <div class="md-form mt-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Recherche" aria-label="Rechercher">
         </div>
       </form>
     </links>
   </mdb-navbar>
   <!-- Intro Section -->
-  <div class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url('../assets/images/front.jpg');  background-repeat: no-repeat;">
-    <div class="full-bg-img mask rgba-black-light">
-      <div class="container flex-center">
-        <div class="row pt-5 mt-3 w-100">
-          <div class="col-md-12">
-            <div class="text-center">
-              <h2 class="h1 h1-reponsive white-text font-up font-bold mb-3 wow fadeInDown" data-wow-delay="0.3s"><strong>Centre De Dermatologie & Esthétique Verdinois</strong></h2>
-              <hr class="hr-light mt-4 wow fadeInDown" data-wow-delay="0.4s">
-              <h5 class="font-up mb-5 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>Dr Irina Addenet</strong></h5>
-              <a mdbBtn color="white" outline="true" class="wow fadeInDown waves-light" data-wow-delay="0.4s"
-                 mdbWavesEffect>Le cabinet</a>
-              <a mdbBtn color="white" outline="true" class="wow fadeInDown waves-light" data-wow-delay="0.4s"
-                 mdbWavesEffect>Contacts</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </header>
 
-<section><div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<router-outlet></router-outlet>
 
-  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minim</div></section>
-
-
-
+<app-footer></app-footer>
 <!--Main Navigation-->

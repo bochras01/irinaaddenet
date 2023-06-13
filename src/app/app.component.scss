@@ -1,0 +1,11 @@
+@media (max-width: 991px) {
+  .navbar .dropdown-menu {
+    position: static !important;
+  }
+}
+@media (max-width: 767px) and (min-width: 400px), (max-width: 850px) and (min-width: 800px) {
+  .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse {
+    /* max-height: 340px; */
+    max-height: initial;
+  }
+}

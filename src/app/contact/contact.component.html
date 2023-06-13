@@ -1,0 +1,52 @@
+<!-- Opening Hours-->
+<section class="opening-hours">
+  <div class="container">
+    <h2 class="text-uppercase"><span class="text-black-50">Centre De Dermatologie & Esthétique Verdinois</span></h2>
+    <div class="row align-items-center">
+      <div class="col-md-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 " style="padding: 0 !important;">
+              <form [formGroup]="formData" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                  <label for="email" style="color: #27406d !important;">Email</label>
+                  <input style="color: #27406d !important;" type="email" class="form-control" id="email"
+                         aria-describedby="emailHelp" placeholder="Adresse email"
+                         formControlName="email">
+                </div>
+                <div class="form-group">
+                  <label for="fullname" class="text-muted">Nom</label>
+                  <input style="color: #27406d !important;" type="text" class="form-control" id="fullname"
+                         placeholder="Nom" formControlName="fullname">
+                </div>
+                <div class="form-group">
+                  <label for="firstname" style="color: #27406d !important;">Prénom</label>
+                  <input style="color: #27406d !important;" type="text" class="form-control" id="firstname"
+                         placeholder="Prénom" formControlName="firstname">
+                </div>
+                <div class="form-group">
+                  <label for="comment" style="color: #27406d !important;">Message</label>
+                  <textarea style="color: #27406d !important;" class="form-control" formControlName="comment"
+                            id="comment"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-7">
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.030378849386!2d2.2851316148560215!3d48.89575820603021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f824818d90b%3A0x76e8b675bcd465ee!2s98%20Rue%20du%20Pr%C3%A9sident%20Wilson%2C%2092300%20Levallois-Perret!5e0!3m2!1sfr!2sfr!4v1671421756950!5m2!1sfr!2sfr"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      </div>
+
+
+    </div>
+  </div>
+</section>
+

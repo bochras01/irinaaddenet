@@ -1,0 +1,14 @@
+.container-slide {
+  //display: block;
+  //margin: 110px auto;
+  //width: fit-content;
+  margin-top: 105px;
+  max-width: 60%;
+  height: auto;
+  @media only screen and (max-width: 600px) {
+    max-width: 100%;
+  }
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 0 !important;
+}

@@ -4,19 +4,33 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {MDBBootstrapModule} from "angular-bootstrap-md";
-import { TeamComponent } from './team/team.component';
 import { PricesComponent } from './prices/prices.component';
+import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
+import { WhoAreWeComponent } from './who-are-we/who-are-we.component';
+import { OffersCardsComponent } from './offers-cards/offers-cards.component';
+import { SlideShowComponent } from './slide-show/slide-show.component';
+import { ContactComponent } from './contact/contact.component';
+import { TraitmentComponent } from './traitment/traitment.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
     AppComponent,
-    TeamComponent,
-    PricesComponent
+    PricesComponent,
+    FooterComponent,
+    HomeComponent,
+    WhoAreWeComponent,
+    OffersCardsComponent,
+    SlideShowComponent,
+    ContactComponent,
+    TraitmentComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
