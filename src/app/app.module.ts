@@ -13,6 +13,7 @@ import { SlideShowComponent } from './slide-show/slide-show.component';
 import { ContactComponent } from './contact/contact.component';
 import { TraitmentComponent } from './traitment/traitment.component';
 import {ReactiveFormsModule} from "@angular/forms";
+import { BotoxComponent } from './botox/botox.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import {ReactiveFormsModule} from "@angular/forms";
     SlideShowComponent,
     ContactComponent,
     TraitmentComponent,
+    BotoxComponent,
   ],
   imports: [
     BrowserModule,

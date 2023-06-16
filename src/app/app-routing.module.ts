@@ -4,13 +4,22 @@ import {HomeComponent} from "./home/home.component";
 import {SlideShowComponent} from "./slide-show/slide-show.component";
 import {ContactComponent} from "./contact/contact.component";
 import {TraitmentComponent} from "./traitment/traitment.component";
+import {PricesComponent} from "./prices/prices.component";
+import {BotoxComponent} from "./botox/botox.component";
 
-const routes: Routes = [{
-  path: 'le-cabinet',
-  component: SlideShowComponent,
-  title: "La cabinet"
-},
-  {path: 'cryolipolyse',
+const routes: Routes = [
+  {
+    path: 'le-cabinet',
+    component: SlideShowComponent,
+    title: "La cabinet"
+  },
+  {
+    path: 'test',
+    component: BotoxComponent,
+    title: "La cabinet"
+  },
+  {
+    path: 'cryolipolyse',
     component: TraitmentComponent,
     title: "Cryolipolyse"
   },
@@ -18,6 +27,11 @@ const routes: Routes = [{
     path: 'contact',
     component: ContactComponent,
     title: "contact"
+  },
+  {
+    path: 'prix',
+    component: PricesComponent,
+    title: "Prix"
   },
   {
     path: 'accueil',
