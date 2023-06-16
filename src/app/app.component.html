@@ -13,28 +13,23 @@
           <a class="nav-link" href="">Accueil<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item waves-light" mdbWavesEffect>
-          <a class="nav-link" href="le-cabinet">Le cabinet</a>
+          <a class="nav-link" href="a-propos">À propos</a>
         </li>
 
-        <li class="nav-item waves-light dropdown" mdbWavesEffect>
-          <a
-            class="nav-link dropdown-toggle"
-            id="navbarDropdownMenuLink1"
-            role="button"
-            data-mdb-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Préstations
+        <li mdbDropdown class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" role="button"
+             mdbDropdownToggle aria-expanded="false">
+            option
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1" style="margin-top: 300px">
+          <ul *mdbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li>
-              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Item1</a>
             </li>
             <li>
-              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Item2</a>
             </li>
             <li>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="#">Item3</a>
             </li>
           </ul>
         </li>
@@ -66,28 +61,13 @@
         <li class="nav-item waves-light" mdbWavesEffect>
           <a class="nav-link" href="/le-cabinet">Le cabinet</a>
         </li>
-        <li class="nav-item waves-light dropdown" mdbWavesEffect>
+        <li class="nav-item waves-light" mdbWavesEffect>
           <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            id="navbarDropdownMenuLink"
-            role="button"
-            data-mdb-toggle="dropdown"
-            aria-expanded="false"
+            class="nav-link"
+            href="#"²
           >
             Préstations
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="margin-top: 300px">
-            <li>
-              <a class="dropdown-item" href="#">Action</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Another action</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/">Something else here</a>
-            </li>
-          </ul>
         </li>
         <li class="nav-item waves-light" mdbWavesEffect>
           <a class="nav-link" href="/prix">Prix</a>

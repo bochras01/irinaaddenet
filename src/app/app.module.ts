@@ -11,9 +11,9 @@ import { WhoAreWeComponent } from './who-are-we/who-are-we.component';
 import { OffersCardsComponent } from './offers-cards/offers-cards.component';
 import { SlideShowComponent } from './slide-show/slide-show.component';
 import { ContactComponent } from './contact/contact.component';
-import { TraitmentComponent } from './traitment/traitment.component';
 import {ReactiveFormsModule} from "@angular/forms";
-import { BotoxComponent } from './botox/botox.component';
+import { AboutComponent } from './about/about.component';
+
 
 @NgModule({
   declarations: [
@@ -25,8 +25,7 @@ import { BotoxComponent } from './botox/botox.component';
     OffersCardsComponent,
     SlideShowComponent,
     ContactComponent,
-    TraitmentComponent,
-    BotoxComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,

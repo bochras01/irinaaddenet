@@ -3,25 +3,14 @@ import {RouterModule, Routes} from '@angular/router';
 import {HomeComponent} from "./home/home.component";
 import {SlideShowComponent} from "./slide-show/slide-show.component";
 import {ContactComponent} from "./contact/contact.component";
-import {TraitmentComponent} from "./traitment/traitment.component";
 import {PricesComponent} from "./prices/prices.component";
-import {BotoxComponent} from "./botox/botox.component";
+import {AboutComponent} from "./about/about.component";
 
 const routes: Routes = [
   {
-    path: 'le-cabinet',
-    component: SlideShowComponent,
+    path: 'a-propos',
+    component: AboutComponent,
     title: "La cabinet"
-  },
-  {
-    path: 'test',
-    component: BotoxComponent,
-    title: "La cabinet"
-  },
-  {
-    path: 'cryolipolyse',
-    component: TraitmentComponent,
-    title: "Cryolipolyse"
   },
   {
     path: 'contact',
