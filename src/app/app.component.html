@@ -19,17 +19,17 @@
         <li mdbDropdown class="nav-item dropdown">
           <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" role="button"
              mdbDropdownToggle aria-expanded="false">
-            option
+            Nos traitements
           </a>
           <ul *mdbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li>
-              <a class="dropdown-item" href="#">Item1</a>
+              <a class="dropdown-item" href="lasers">Lasers</a>
             </li>
             <li>
-              <a class="dropdown-item" href="#">Item2</a>
+              <a class="dropdown-item" href="#">Esthétique</a>
             </li>
             <li>
-              <a class="dropdown-item" href="#">Item3</a>
+              <a class="dropdown-item" href="/cryolipolyse">Cryolipolyse</a>
             </li>
           </ul>
         </li>
@@ -40,11 +40,9 @@
           <a class="nav-link" href="/contact">Contacts</a>
         </li>
       </ul>
-      <form class="form-inline waves-light" mdbWavesEffect>
-        <div class="md-form mt-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Recherche" aria-label="Rechercher">
-        </div>
-      </form>
+      <a class="btn text-white" style="background-color: transparent;" href="https://www.doctolib.fr/dermatologue/verdun/irina-addenet" role="button">
+        Prendre Un Rendez-Vous
+      </a>
     </links>
   </mdb-navbar>
   <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark fixed-top top-nav-collapse" *ngIf="classBackground">
@@ -61,13 +59,22 @@
         <li class="nav-item waves-light" mdbWavesEffect>
           <a class="nav-link" href="/le-cabinet">Le cabinet</a>
         </li>
-        <li class="nav-item waves-light" mdbWavesEffect>
-          <a
-            class="nav-link"
-            href="#"²
-          >
-            Préstations
+        <li mdbDropdown class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink2" role="button"
+             mdbDropdownToggle aria-expanded="false">
+            Nos traitements
           </a>
+          <ul *mdbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+            <li>
+              <a class="dropdown-item" href="lasers">Laser</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Esthétique</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/cryolipolyse">Cryolipolyse</a>
+            </li>
+          </ul>
         </li>
         <li class="nav-item waves-light" mdbWavesEffect>
           <a class="nav-link" href="/prix">Prix</a>

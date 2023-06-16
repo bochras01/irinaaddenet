@@ -13,6 +13,7 @@ import { SlideShowComponent } from './slide-show/slide-show.component';
 import { ContactComponent } from './contact/contact.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import { AboutComponent } from './about/about.component';
+import { CryolypoliseComponent } from './cryolypolise/cryolypolise.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { AboutComponent } from './about/about.component';
     SlideShowComponent,
     ContactComponent,
     AboutComponent,
+    CryolypoliseComponent,
   ],
   imports: [
     BrowserModule,

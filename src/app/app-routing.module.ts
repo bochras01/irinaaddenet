@@ -5,12 +5,23 @@ import {SlideShowComponent} from "./slide-show/slide-show.component";
 import {ContactComponent} from "./contact/contact.component";
 import {PricesComponent} from "./prices/prices.component";
 import {AboutComponent} from "./about/about.component";
+import {CryolypoliseComponent} from "./cryolypolise/cryolypolise.component";
 
 const routes: Routes = [
   {
     path: 'a-propos',
     component: AboutComponent,
     title: "La cabinet"
+  },
+  {
+    path: 'cryolipolyse',
+    component: CryolypoliseComponent,
+    title: "Cryolipolyse"
+
+  },
+  {
+    path: 'lasers',
+    loadChildren: () => import('./lasers/lasers.module').then(m => m.LasersModule),
   },
   {
     path: 'contact',
