@@ -24,6 +24,10 @@ const routes: Routes = [
     loadChildren: () => import('./lasers/lasers.module').then(m => m.LasersModule),
   },
   {
+    path: 'esthetique',
+    loadChildren: () => import('./esthetique/esthetique.module').then(m => m.EsthetiqueModule),
+  },
+  {
     path: 'contact',
     component: ContactComponent,
     title: "contact"
