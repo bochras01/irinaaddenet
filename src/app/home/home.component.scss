@@ -1,0 +1,9 @@
+.home {
+  background-image: linear-gradient(to top, rgba(245, 246, 252, 0.52), rgba(14, 1, 11, 0.73)), url('../../assets/images/home2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (max-width: 740px) {
+    background-image: linear-gradient(to top, rgba(245, 246, 252, 0.52), rgba(14, 1, 11, 0.73)), url('../../assets/images/home2m.jpg');
+    background-size: cover;
+  }
+}
