@@ -3,7 +3,7 @@ import {RouterModule, Routes} from '@angular/router';
 import {HomeComponent} from "./home/home.component";
 import {SlideShowComponent} from "./slide-show/slide-show.component";
 import {ContactComponent} from "./contact/contact.component";
-import {PricesComponent} from "./prices/prices.component";
+import {FirstComponent} from "./first/first.component";
 import {AboutComponent} from "./about/about.component";
 import {CryolypoliseComponent} from "./cryolypolise/cryolypolise.component";
 
@@ -33,9 +33,9 @@ const routes: Routes = [
     title: "contact"
   },
   {
-    path: 'prix',
-    component: PricesComponent,
-    title: "Prix"
+    path: 'premiere-consultation-esthetique',
+    component: FirstComponent,
+    title: "Première consultation éshétique"
   },
   {
     path: 'accueil',

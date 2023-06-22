@@ -8,11 +8,6 @@ import {MycoseVaginaleComponent} from './mycose-vaginale/mycose-vaginale.compone
 import {CouperoseComponent} from './couperose/couperose.component';
 import {CouMainComponent} from './cou-main/cou-main.component';
 import {GynecoComponent} from './gyneco/gyneco.component';
-import {MdbAccordionModule} from "mdb-angular-ui-kit/accordion";
-import {BrowserModule} from "@angular/platform-browser";
-import {AppRoutingModule} from "../app-routing.module";
-import {MDBBootstrapModule} from "angular-bootstrap-md";
-import {ReactiveFormsModule} from "@angular/forms";
 
 
 

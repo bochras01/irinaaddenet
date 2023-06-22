@@ -21,13 +21,18 @@ const routes: Routes = [
   },
   {
     path: 'mesotherapie',
-    component: BotoxComponent,
-    title: "peeling"
+    component: MesotherapieComponent,
+    title: "Mésothérapie / Mesolift"
   },
   {
     path: 'comblement-rides',
     component: ComblementRidesComponent,
     title: "Comblements des rides"
+  },
+  {
+    path: 'peeling',
+    component: PeelingComponent,
+    title: "Peeling"
   },
 ];
 

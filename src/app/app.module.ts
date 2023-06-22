@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {MDBBootstrapModule} from "angular-bootstrap-md";
-import { PricesComponent } from './prices/prices.component';
+import { FirstComponent } from './first/first.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { WhoAreWeComponent } from './who-are-we/who-are-we.component';
@@ -19,7 +19,7 @@ import { CryolypoliseComponent } from './cryolypolise/cryolypolise.component';
 @NgModule({
   declarations: [
     AppComponent,
-    PricesComponent,
+    FirstComponent,
     FooterComponent,
     HomeComponent,
     WhoAreWeComponent,
