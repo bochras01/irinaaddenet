@@ -8,6 +8,8 @@ import {MycoseVaginaleComponent} from './mycose-vaginale/mycose-vaginale.compone
 import {CouperoseComponent} from './couperose/couperose.component';
 import {CouMainComponent} from './cou-main/cou-main.component';
 import {GynecoComponent} from './gyneco/gyneco.component';
+import {MdbCollapseModule} from "mdb-angular-ui-kit/collapse";
+import {MdbAccordionModule} from "mdb-angular-ui-kit/accordion";
 
 
 
@@ -62,7 +64,7 @@ const routes: Routes = [
     GynecoComponent
   ],
   imports: [
-    CommonModule, RouterModule.forChild(routes),
+    CommonModule, RouterModule.forChild(routes),MdbCollapseModule, MdbAccordionModule
   ],
   exports: [RouterModule]
 })

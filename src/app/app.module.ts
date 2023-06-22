@@ -14,6 +14,7 @@ import { ContactComponent } from './contact/contact.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import { AboutComponent } from './about/about.component';
 import { CryolypoliseComponent } from './cryolypolise/cryolypolise.component';
+import {MdbAccordionModule} from "mdb-angular-ui-kit/accordion";
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { CryolypoliseComponent } from './cryolypolise/cryolypolise.component';
     BrowserModule,
     AppRoutingModule,
     MDBBootstrapModule.forRoot(),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MdbAccordionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -13,26 +13,26 @@
           progressive et durable, grâce à l’énergie lumineuse du laser . Cette énergie est captée par le poil et
           transmise par conduction jusqu’à la racine. Le bulbe sera détruit et empêchera ainsi toute nouvelle repousse.
         </p>
+        <h2>Les objectifs</h2>
+        <p>Pour les femmes, en épilation laser des résultats très satisfaisants signifient 80 à 90 % de non repousse, en
+          moyenne dans la zone traitée, un an après la fin du traitement principal. Les poils restants sont toujours
+          plus clairs et plus fins.
+
+          Les cas d’hyperandrogénie / hirsutisme peuvent bien sûr être traités avec succès au laser. Ils requièrent
+          cependant plus de séances que la moyenne, et le déséquilibre hormonal doit être corrigé par un médecin
+          parallèlement à l’épilation laser.
+
+          Pour les hommes, aucune norme ne peut être valablement retenue pour 2 raisons : la testostérone stimule en
+          permanence la pousse de poils et le but esthétique des hommes est très variable (au contraire des femmes qui
+          souhaitent toutes zéro poil).
+
+          Sans oublier qu’une épilation laser ne peut détruire que les poils existants. De nouveaux poils consécutifs à
+          un bouleversement hormonal (puberté, grossesse, ménopause…)peuvent survenir au cours de la vie sans que le
+          traitement laser suivi auparavant puisse être incriminé.
+        </p>
       </div>
     </div>
     <div>
-      <h2>Les objectifs</h2>
-      <p>Pour les femmes, en épilation laser des résultats très satisfaisants signifient 80 à 90 % de non repousse, en
-        moyenne dans la zone traitée, un an après la fin du traitement principal. Les poils restants sont toujours
-        plus clairs et plus fins.
-
-        Les cas d’hyperandrogénie / hirsutisme peuvent bien sûr être traités avec succès au laser. Ils requièrent
-        cependant plus de séances que la moyenne, et le déséquilibre hormonal doit être corrigé par un médecin
-        parallèlement à l’épilation laser.
-
-        Pour les hommes, aucune norme ne peut être valablement retenue pour 2 raisons : la testostérone stimule en
-        permanence la pousse de poils et le but esthétique des hommes est très variable (au contraire des femmes qui
-        souhaitent toutes zéro poil).
-
-        Sans oublier qu’une épilation laser ne peut détruire que les poils existants. De nouveaux poils consécutifs à
-        un bouleversement hormonal (puberté, grossesse, ménopause…)peuvent survenir au cours de la vie sans que le
-        traitement laser suivi auparavant puisse être incriminé.
-      </p>
       <h2>Qu’est-ce qu’un poil ? Quelle cible ?</h2>
       <p>Le poil prend naissance au fond du follicule pileux, il se caractérise par sa couleur, son type (fin,
         profond),
@@ -116,55 +116,478 @@
         Le gonflement et la rougeur obtenus sont les preuves de l’efficacité du traitement et se dissipent en
         quelquesheures.</p>
       <!-- Buttons trigger collapse -->
-      <h2>Tarifs</h2>
-      <a
-        class="btn btn-primary"
-        data-mdb-toggle="collapse"
-        href="#multiCollapseExample1"
-        role="button"
-        aria-expanded="false"
-        aria-controls="multiCollapseExample1"
-      >
-        Toggle first element
-      </a>
-      <button
-        class="btn btn-primary"
-        type="button"
-        data-mdb-toggle="collapse"
-        data-mdb-target="#multiCollapseExample2"
-        aria-expanded="false"
-        aria-controls="multiCollapseExample2"
-      >
-        Toggle second element
-      </button>
-      <button
-        class="btn btn-primary"
-        type="button"
-        data-mdb-toggle="collapse"
-        data-mdb-target=".multi-collapse"
-        aria-expanded="false"
-        aria-controls="multiCollapseExample1 multiCollapseExample2"
-      >
-        Toggle both elements
-      </button>
 
-      <!-- Collapsed content -->
-      <div class="row">
-        <div class="col">
-          <div class="collapse multi-collapse mt-3" id="multiCollapseExample1">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-            richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-            cred nesciunt sapiente ea proident.
-          </div>
-        </div>
-        <div class="col">
-          <div class="collapse multi-collapse mt-3" id="multiCollapseExample2">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-            richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-            cred nesciunt sapiente ea proident.
-          </div>
-        </div>
-      </div>
+      <h2>Zones traitées et tarifs</h2>
+
+     <div class="row">
+       <div class="col">
+         <h3>Pour les femmes</h3>
+         <div class="row">
+           <div class="column">
+             <button
+               class="btn"
+               type="button"
+               (click)="linkCollapse.toggle()"
+               [attr.aria-expanded]="!linkCollapse.collapsed"
+               aria-controls="multiCollapseExample1"
+             >
+               Visage  <i class="arrow" [ngClass]="{'down': buttonCollapse.collapsed, 'up':!buttonCollapse.collapsed }"></i>
+             </button>
+
+             <div
+               class="collapse multi-collapse "
+               id="multiCollapseExample1"
+               mdbCollapse
+               #linkCollapse="mdbCollapse"
+             >
+               <table class="table">
+                 <tbody>
+
+                 <tr>
+                   <th scope="row">Favoris</th>
+                   <td>50 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Inter-sourcils</th>
+                   <td>35 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Menton</th>
+                   <td>40 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Lèvre supérieure</th>
+                   <td>40 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Nuque</th>
+                   <td>55 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Pommettes</th>
+                   <td>50 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Sourcils</th>
+                   <td>40 €</td>
+
+                 <tr>
+                   <th scope="row">Tour de cou</th>
+                   <td>50 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Front</th>
+                   <td>70 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Visage entier</th>
+                   <td>115 €</td>
+                 </tr>
+                 </tbody>
+               </table>
+             </div>
+           </div>
+           <div class="column">
+             <button
+               class="btn"
+               type="button"
+               (click)="buttonCollapse.toggle()"
+               [attr.aria-expanded]="!buttonCollapse.collapsed"
+               aria-controls="multiCollapseExample2"
+             >
+               Corps  <i class="arrow" [ngClass]="{'down': buttonCollapse.collapsed, 'up':!buttonCollapse.collapsed }"></i>
+             </button>
+             <div
+               class="collapse multi-collapse"
+               id="multiCollapseExample2"
+               mdbCollapse
+               #buttonCollapse="mdbCollapse"
+             >
+               <table class="table">
+                 <tbody>
+                 <tr>
+                   <th scope="row">Aréoles des seins</th>
+                   <td>40 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Décolleté</th>
+                   <td>140 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Dos – bas</th>
+                   <td>70 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Dos – haut</th>
+                   <td>115 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Dos entier</th>
+                   <td>185 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Fesses</th>
+                   <td>70 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Ligne abdominale</th>
+                   <td>40 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Ligne ventrale</th>
+                   <td>40 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Maillot classique</th>
+                   <td>55 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Maillot échancré</th>
+                   <td>80 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">brésilien</th>
+                   <td>100 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Maillot intégral</th>
+                   <td>105 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Sillons inter-fessiers</th>
+                   <td>40 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Ventre</th>
+                   <td>70 €</td>
+                 </tr>
+                 </tbody>
+               </table>
+             </div>
+           </div>
+           <div class="column">
+
+             <button
+               class="btn "
+               type="button"
+               (click)="buttonCollapse3.toggle()"
+               [attr.aria-expanded]="!buttonCollapse3.collapsed"
+               aria-controls="multiCollapseExample3"
+             >
+               Bras  <i class="arrow" [ngClass]="{'down': buttonCollapse.collapsed, 'up':!buttonCollapse.collapsed }"></i>
+             </button>
+             <div
+               class="collapse multi-collapse "
+               id="multiCollapseExample3"
+               mdbCollapse
+               #buttonCollapse3="mdbCollapse"
+             >
+               <table class="table">
+                 <tbody>
+                 <tr>
+                   <th scope="row">Aisselles</th>
+                   <td>50 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Avant-bras et mains</th>
+                   <td>105 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Bras entiers</th>
+                   <td>165 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Bras supérieurs (sauf épaules)</th>
+                   <td>80 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Mains</th>
+                   <td>45 €</td>
+                 </tr>
+
+                 </tbody>
+               </table>
+             </div>
+           </div>
+           <div class="column">
+             <button
+               class="btn "
+               type="button"
+               (click)="buttonCollapse4.toggle()"
+               [attr.aria-expanded]="!buttonCollapse4.collapsed"
+               aria-controls="multiCollapseExample4"
+             >
+               Jambes  <i class="arrow" [ngClass]="{'down': buttonCollapse.collapsed, 'up':!buttonCollapse.collapsed }"></i>
+             </button>
+             <div
+               class="collapse multi-collapse"
+               id="multiCollapseExample4"
+               mdbCollapse
+               #buttonCollapse4="mdbCollapse"
+             >
+               <table class="table">
+                 <tbody>
+                 <tr>
+                   <th scope="row">Cuisses</th>
+                   <td>210 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Demi jambes (Genoux compris)</th>
+                   <td>165 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Arrière des cuisses</th>
+                   <td>125 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Intérieur des cuisses</th>
+                   <td>100 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Jambes complètes (Pieds compris)</th>
+                   <td>330 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Pieds</th>
+                   <td>45 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Genoux</th>
+                   <td>55 €</td>
+                 </tr>
+                 </tbody>
+               </table>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="col"> <h3> Pour les hommes</h3>
+         <div class="row">
+           <div class="column">
+             <button
+               class="btn"
+               type="button"
+               (click)="linkCollapse5.toggle()"
+               [attr.aria-expanded]="!linkCollapse5.collapsed"
+               aria-controls="multiCollapseExample5"
+             >
+               Visage  <i class="arrow" [ngClass]="{'down': buttonCollapse.collapsed, 'up':!buttonCollapse.collapsed }"></i>
+             </button>
+
+             <div
+               class="collapse multi-collapse "
+               id="multiCollapseExample5"
+               mdbCollapse
+               #linkCollapse5="mdbCollapse"
+             >
+               <table class="table">
+                 <tbody>
+
+                 <tr>
+                   <th scope="row">Barbe entière</th>
+                   <td>105 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Col de chemise</th>
+                   <td>50 €</td>
+                 </tr>
+
+                 <tr>
+                   <th scope="row">Inter-sourcils</th>
+                   <td>40 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Nez</th>
+                   <td>40 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Nuque</th>
+                   <td>50 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Oreilles</th>
+                   <td>40 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Pommettes</th>
+                   <td>50 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Sourcils</th>
+                   <td>80 €</td>
+
+                 <tr>
+                   <th scope="row">Tour de cou</th>
+                   <td>65 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Visage entier</th>
+                   <td>115 €</td>
+                 </tr>
+                 </tbody>
+               </table>
+             </div>
+           </div>
+           <div class="column">
+             <button
+               class="btn"
+               type="button"
+               (click)="buttonCollapse6.toggle()"
+               [attr.aria-expanded]="!buttonCollapse6.collapsed"
+               aria-controls="multiCollapseExample6"
+             >
+               Corps  <i class="arrow" [ngClass]="{'down': buttonCollapse.collapsed, 'up':!buttonCollapse.collapsed }"></i>
+             </button>
+             <div
+               class="collapse multi-collapse"
+               id="multiCollapseExample6"
+               mdbCollapse
+               #buttonCollapse6="mdbCollapse"
+             >
+               <table class="table">
+                 <tbody>
+                 <tr>
+                   <th scope="row">Dos – bas</th>
+                   <td>85 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Dos – haut</th>
+                   <td>140 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Dos entier</th>
+                   <td>200 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Fesses</th>
+                   <td>140 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Maillot entier</th>
+                   <td>160 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Parties génitales</th>
+                   <td>90 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Sillons inter-fessiers</th>
+                   <td>75 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Torse</th>
+                   <td>125 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Ventre</th>
+                   <td>110 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Ventre, Torse</th>
+                   <td>190 €</td>
+                 </tr>
+                 </tbody>
+               </table>
+             </div>
+           </div>
+           <div class="column">
+
+             <button
+               class="btn "
+               type="button"
+               (click)="buttonCollapse7.toggle()"
+               [attr.aria-expanded]="!buttonCollapse7.collapsed"
+               aria-controls="multiCollapseExample7"
+             >
+               Bras  <i class="arrow" [ngClass]="{'down': buttonCollapse.collapsed, 'up':!buttonCollapse.collapsed }"></i>
+             </button>
+             <div
+               class="collapse multi-collapse "
+               id="multiCollapseExample7"
+               mdbCollapse
+               #buttonCollapse7="mdbCollapse"
+             >
+               <table class="table">
+                 <tbody>
+                 <tr>
+                   <th scope="row">Aisselles</th>
+                   <td>60 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Avant-bras et mains</th>
+                   <td>110 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Bras entiers</th>
+                   <td>160 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Bras supérieurs (sauf épaules)</th>
+                   <td>95 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Mains</th>
+                   <td>55 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Epaules</th>
+                   <td>105 €</td>
+                 </tr>
+
+                 </tbody>
+               </table>
+             </div>
+           </div>
+           <div class="column">
+             <button
+               class="btn "
+               type="button"
+               (click)="buttonCollapse8.toggle()"
+               [attr.aria-expanded]="!buttonCollapse8.collapsed"
+               aria-controls="multiCollapseExample8"
+             >
+               Jambes  <i class="arrow" [ngClass]="{'down': buttonCollapse.collapsed, 'up':!buttonCollapse.collapsed }"></i>
+             </button>
+             <div
+               class="collapse multi-collapse"
+               id="multiCollapseExample8"
+               mdbCollapse
+               #buttonCollapse8="mdbCollapse"
+             >
+               <table class="table">
+                 <tbody>
+                 <tr>
+                   <th scope="row">Cuisses</th>
+                   <td>200 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Demi jambes</th>
+                   <td>190 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Jambes complètes (Pieds compris)</th>
+                   <td>350 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Pieds</th>
+                   <td>50 €</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Genoux</th>
+                   <td>55 €</td>
+                 </tr>
+                 </tbody>
+               </table>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+      <!-- Buttons trigger collapse -->
+
+
     </div>
   </div>
+  <!-- Collapsed content -->
+
 </section>
