@@ -76,3 +76,12 @@ h5 {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
+.prez-container {
+  @media (max-width: 600px) {
+    padding: 0 16px 0 16px;
+  }
+}
+p {
+  text-align: justify
+}
+
