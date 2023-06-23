@@ -1,16 +1,8 @@
-.presentation {
-  max-width: 720px;
-  max-height: none;
-  margin: 0 auto;
-  text-align: center;
-  height: auto;
-}
 
 .prez-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  @media (max-width: 600px) {
+    padding: 0 16px 0 16px;
+  }
 }
 
 h1 {

@@ -18,7 +18,6 @@ export class AppComponent {
   ngOnInit() {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
-       console.log(event.url);
         this.classBackground = (event.url != '/') && (event.url != '/accueil');
       }
     });
